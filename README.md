@@ -1,4 +1,4 @@
-# TA Repo
+# GREg KIar's Repo
 This repository will be updated as an sample project for the rest of the class. Content will be posted here 1 week prior to it being due for the class.
 
 ##Contact
