@@ -1,4 +1,4 @@
-# GREg KIar's Repo
+# GREg KIar's repo
 This repository will be updated as an sample project for the rest of the class. Content will be posted here 1 week prior to it being due for the class.
 
 ##Contact
