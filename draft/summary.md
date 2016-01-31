@@ -27,15 +27,10 @@ If successful, this solution will empower reproducible science, remove significa
 
 
 ------------
-##Jovo says:
-####Opportunity
-"What awesome things are happening"
 
-####Significance
-"How much does it affect a person, and how many people does it affect"
-
-####Feasibility
-"To what degree can we solve the problem with the time and resources we have"
-
-####Innovation
-"Of relative importance, depending where you work"
+##Notes:
+In class jovo said the following:
+- Opportunity: "What awesome things are happening"
+- Significance: "How much does it affect a person, and how many people does it affect"
+- Feasibility: "To what degree can we solve the problem with the time and resources we have"
+- Innovation: "Of relative importance, depending where you work"
