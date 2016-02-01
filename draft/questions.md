@@ -1,25 +1,23 @@
-###Types of Questions
+###Questions About my Project
 
 **Descriptive** <br />
-*Which processing strategy produces the highest same-study descriminability for each dataset?*
+- *How many graphs are there?*
+- *How many nodes are in the graphs?*
+- *What covariates do the graphs have associated with them?*
 
 **Exploratory** <br />
-*Is there a common processing strategy for which same-study descriminability is maximized across uniquely collected datasets?*
+- *Are there common clusters in the graphs?*
+- *What is the average number of edges in a graph?*
+- *What is the underlying distribution the graphs?*
 
 **Inferential** <br />
-*Does processing uniquely obtainted datasets uniformly increase the cross-study descriminability of the aggregate dataset?*
+- *Are graphs from different datasets sampled from the same distribution?*
 
 **Predictive** <br />
-*Are there features of the data that indicate which processing strategy will provide the highest same-study descriminability?*
+- *Can we identify gender based on the structure of the graphs?*
 
 **Causal** <br />
-*Does processing the datasets differently have an effect on the cross-study descriminability?*
+- *What is different in the brain between males and females which allows us classify them?*
 
 **Mechanistic** <br />
-*What properties does the processing strategy with the best cross-study descriminability introduce to the data which makes it successful?*
-
-------------
-####Notes:
-
-**same-study descriminability**: Descriminability while using datapoints within a uniformly collected dataset. <br/>
-**cross-study descriminability**: Descriminability while using datapoints across separate datasets, each of which has been uniformly collected.
+- *How in cranial development do males and females differ such that the observed differences come into be?*
