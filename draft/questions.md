@@ -22,10 +22,12 @@ Y are class labels and belong to the set {0,1}, and indicate subject gender.
 **Inferential** <br />
 - *If graphs G<sub>n<sub>i</sub></sub> and G<sub>n<sub>j</sub></sub> for all i != j are processed the same way, is descriminability maximized?*
 
-Descriminability is defined as: R = p( ||A<sub>xy</sub> - A<sub>x'y</sub>|| \leq || A<sub>xy</sub> - A<sub>x'y'</sub> || ), where x is the graph observed and y is the label associated with the observed graph. If q is the processing technique used to collect the graph, then a subscript qq indicates similar processing across datasets and qq' indicates different processing. Thus, we have:
+If our brains are samples X<sub>i</sub> in \mathcal\{X\}, then the observed graphs are Y<sub>i</sub><sup>q</sup> = f<sub>q</sub>(X<sub>i</sub>), for processing strategies f<sub>q</sub> where q=1,...,Q, and where f<sub>q</sub>: X<sub>i</sub> \sim Y<sub>i</sub>. If we are asking whether or not using the same functional f improves descriminability, our alernate and hypothesis and null become:
 
-*H<sub>o</sub>*: R<sub>qq</sub> < R<sub>qq'</sub> <br/>
-*H<sub>a</sub>*: R<sub>qq</sub> /geq R<sub>qq'</sub> <br/>
+p( ||A<sub>xy</sub> - A<sub>x'y</sub>|| \leq || A<sub>xy</sub> - A<sub>x'y'</sub> || ), where x is the graph observed and y is the label associated with the observed graph. If a superscript indicates processing technique, we have:
+
+*H<sub>A</sub>*: p( ||Y<sub>ij</sub><sup>q</sup> - Y<sub>ij'</sub><sup>q</sup>|| < || Y<sub>ij</sub><sup>q</sup> - Y<sub>i'j'</sub><sup>q'</sup> || ) <br/>
+*H<sub>0</sub>*: p( ||Y<sub>ij</sub><sup>q</sup> - Y<sub>ij'</sub><sup>q</sup>|| \geq || Y<sub>ij</sub><sup>q</sup> - Y<sub>i'j'</sub><sup>q'</sup> || )
 
 **Predictive** <br />
 - *What is the best classifier, h*, of the form h in \mathcal\{H\} such that h: G<sub>n<sub>i</sub></sub>=(V, E, W) \to Y<sub>n<sub>i</sub></sub>?*
