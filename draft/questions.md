@@ -20,17 +20,18 @@ Y are class labels and belong to the set {0,1}, and indicate subject gender.
 - *What is the distribution of max(A)-min(A) (i.e. dynamic range) for each dataset i?*
 
 **Inferential** <br />
-- *If graphs G<sub>n<sub>i</sub></sub> and G<sub>n<sub>j</sub></sub> for all i != j are processed the same way, is descriminability maximized?*<br/>
+- *If graphs G<sub>n<sub>i</sub></sub> and G<sub>n<sub>j</sub></sub> for all i != j are processed the same way, is descriminability maximized?*
+
 Descriminability is defined as: R = p( ||A<sub>xy</sub> - A<sub>x'y</sub>|| \leq || A<sub>xy</sub> - A<sub>x'y'</sub> || ), where x is the graph observed and y is the label associated with the observed graph. If q is the processing technique used to collect the graph, then a subscript qq indicates similar processing across datasets and qq' indicates different processing. Thus, we have:
 
 *H<sub>o</sub>*: R<sub>qq</sub> < R<sub>qq'</sub> <br/>
 *H<sub>a</sub>*: R<sub>qq</sub> /geq R<sub>qq'</sub> <br/>
 
 **Predictive** <br />
-- *Can we identify Y<sub>n<sub>i</sub></sub> given and unlabeled graph G<sub>n<sub>i</sub></sub>=(V, E, W)?*
+- *Can we design a classifier h in \mathcal\{H\} such that h: G<sub>n<sub>i</sub></sub>=(V, E, W) \to Y<sub>n<sub>i</sub></sub>?*
 
 **Causal** <br />
-- *What is different in the brain between subjects of classes Y=0 and Y=1 which allows us classify them?*
+- *How does gender (i.e. Y=\{0,1\}) influence the structure of the brain?*
 
 **Mechanistic** <br />
-- *How in cranial development do males and females differ such that the observed differences come into be?*
+- *How does a difference in gene expression across genders thoughout development influence the structure of the brain?*
