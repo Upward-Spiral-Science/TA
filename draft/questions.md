@@ -28,7 +28,7 @@ Descriminability is defined as: R = p( ||A<sub>xy</sub> - A<sub>x'y</sub>|| \leq
 *H<sub>a</sub>*: R<sub>qq</sub> /geq R<sub>qq'</sub> <br/>
 
 **Predictive** <br />
-- *Can we design a classifier h in \mathcal\{H\} such that h: G<sub>n<sub>i</sub></sub>=(V, E, W) \to Y<sub>n<sub>i</sub></sub>?*
+- *What is the best classifier, h*, of the form h in \mathcal\{H\} such that h: G<sub>n<sub>i</sub></sub>=(V, E, W) \to Y<sub>n<sub>i</sub></sub>?*
 
 **Causal** <br />
 - *How does gender (i.e. Y=\{0,1\}) influence the structure of the brain?*
