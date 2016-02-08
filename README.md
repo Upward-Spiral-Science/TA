@@ -21,3 +21,6 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 ####Assignment 3
 [**``./code/descriptive_and_exploratory_answers.ipynb``**](./code/descriptive_and_exploratory_answers.ipynb)
   > Begin answering my descriptive and exploratory questions. Once I've answered them I will go back and revise the questions I asked - discuss those I couldn't fully answer, ask follow up questions that would be informative, etc.
+
+[**``./draft/revised_questions.md``**](./draft/revised_questions.md)
+  > Updated the questions based on our initial analysis
