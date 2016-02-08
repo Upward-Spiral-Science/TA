@@ -39,7 +39,7 @@ Y are class labels and belong to the set {0,1}, and indicate subject gender.
 
   > Shown in the code
 
-- *What is the distribution of max(A)-min(A) (i.e. dynamic range) for each dataset i?*
+- ~~*What is the distribution of max(A)-min(A) (i.e. dynamic range) for each dataset i?*~~
 
   > This question was not answered as it didn't seem relevant. Instead, we asked and answered "what is the weight distribution of edge weights for each dataset".
 
