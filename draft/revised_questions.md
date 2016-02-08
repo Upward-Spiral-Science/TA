@@ -41,7 +41,7 @@ Y are class labels and belong to the set {0,1}, and indicate subject gender.
 
 - ~~*What is the distribution of max(A)-min(A) (i.e. dynamic range) for each dataset i?*~~
 
-  > This question was not answered as it didn't seem relevant. Instead, we asked and answered "what is the weight distribution of edge weights for each dataset".
+  > This question was not answered as it didn't seem as informative as the following. Instead, we asked and answered "what is the weight distribution of edge weights for each dataset".
 
 **Inferential** <br />
 - *If graphs G<sub>n<sub>i</sub></sub> and G<sub>n<sub>j</sub></sub> for all i != j are processed the same way, is descriminability maximized?*
