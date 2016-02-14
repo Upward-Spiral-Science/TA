@@ -24,3 +24,7 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 
 [**``./draft/revised_questions.md``**](./draft/revised_questions.md)
   > Updated the questions based on our initial analysis
+
+###Assignment 4
+[**``./code/inferential_simulation.ipynb``**](.code/inferential_simulation.ipynb)
+  > Formally asked inferential question about my data, and answered it on simulated data from the null model
