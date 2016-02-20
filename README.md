@@ -27,4 +27,8 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 
 ###Assignment 4
 [**``./code/inferential_simulation.ipynb``**](./code/inferential_simulation.ipynb)
-  > Formally asked inferential question about my data, and answered it on simulated data from the null model
+  > Formally asked inferential question about my data, and answered it on simulated data from the null model, alternate model, and real data
+
+###Assignment 5
+[**``./code/classification_simulation.ipynb``**](./code/classification_simulation.ipynb)
+  > Formally asked classification question about my data, and answered it on simulated data from the alternate model, and real data
