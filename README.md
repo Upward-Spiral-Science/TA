@@ -32,3 +32,7 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 ###Assignment 5
 [**``./code/classification_simulation.ipynb``**](./code/classification_simulation.ipynb)
   > Formally asked classification question about my data, and answered it on simulated data from the alternate model, and real data
+
+###Assignment 6
+[**``./code/test_assumptions.ipynb``**](./code/test_assumptions.ipynb)
+  > In the previous two assignments, we made assumptions about our data. Now, we will check them and see whether or not they are true, and if not, update our understanding or assumptions about our data to those which are *more* right.
