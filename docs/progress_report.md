@@ -54,7 +54,24 @@ Now that a class conditional edge probability difference has been observed, we c
 Here we notice that with the only classifier which performs significantly better than chance is the Quadratic Discriminant Analysis. In order to gain some understanding as to why this is the case, we proceed to reevaluate our procedure thus far and test the assumptions we've been making up until this point.
 
 #### Testing Assumptions
+Up to this point, our analysis had made two large assumptions about our data: the graphs are sampled idependently and identically, and edges within the graph were sampled independently and identically. Another assumption made implicitly when doing classification with QDA that differs from the other techniques is that our covariance matrix differs across classes. Here, we test each of these assumptions to see if we can impove our model.
 
+First, we test whether the graphs are sampled independently from each other and identically. Plotted below is the covariance matrix of our graphs. Significant content in the off-diagonal suggests that these graphs are in fact dependent. Below that, is a figure which plots the BIC score when doing GMM clustering on the graphs. We see that the optimal number of clusters is greater than 1, suggesting they are not identically distributed, either.
+
+<img src="../figs/graphs-covariance.png" data-canonical-src="../figs/graphs-covariance.png" width="300" />
+<img src="../figs/graphs-identical.png" data-canonical-src="../figs/graphs-identical.png" width="300" />
+
+Next, we investigate the same properties about our edges. Shown below are the same two figures for edges rather than graphs. We again notice lots of content in the off-diagonal of our covariance matrix, suggesting dependence between edges. Notice in the identical test, however, that a clear "optimal" number of clusters does exist whereas previously the plot seemed monotonically increasing. Here we notice an optimal clustering of 4, which can later be leveraged when doing clustering or classification.
+
+<img src="../figs/edges-covariance.png" data-canonical-src="../figs/edges-covariance.png" width="300" />
+<img src="../figs/edges-identical.png" data-canonical-src="../figs/edges-identical.png" width="300" />
+
+Finally, we test whether or not the assumption made implicitly in QDA, that our classes have different covariance matrices, is true. Shown below is a plot of each of the class covariance matrices, as well as a plot of the absolute difference of this matrix. We can see a significant difference in this matrix, which suggests why QDA outperformed the other methods (certainly LDA, which explicitly assumes classes have an identical covariance matrix).
+
+<img src="../figs/class-covariance.png" data-canonical-src="../figs/class-covariance.png" width="300" />
+
+#### Next Steps
+Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can cluster our data into the four edge categories shown while testing the identical edge assumption, and then compute edge densities among each of them for a higher dimensional feature overwhich we are testing hypotheses and classifying covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
 
 ### Methods
 Tabulated below is the source code for all of the question sets explored below.
