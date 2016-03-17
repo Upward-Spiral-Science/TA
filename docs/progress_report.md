@@ -1,4 +1,21 @@
 ## Progress Report - March 20th, 2016
+**Table of Contents:**
+- [Overview]()
+- [Scientific Questioning]()
+  - [Decriptive Analysis]()
+  - [Exploratory Analysis]()
+  - [Inferential Analysis]()
+  - [Predictive Analysis]()
+  - [Testing Assumptions]()
+  - [Next Steps]()
+- [Methods]()
+  - [Decriptive Analysis]()
+  - [Exploratory Analysis]()
+  - [Inferential Analysis]()
+  - [Predictive Analysis]()
+  - [Testing Assumptions]()
+
+----------
 
 ### Overview
 Mental illness plagues humanity. Causing huge financial social burden, mental illness is the leading cause of disability globally. As such, we have been analyzing the structure of brain graphs with the goal of understanding underlying patterns or features which allow us to classify subjects based on observed covariates.
@@ -71,11 +88,10 @@ Finally, we test whether or not the assumption made implicitly in QDA, that our 
 <img src="../figs/class_covariance.png" data-canonical-src="../figs/class_covariance.png" width="300" />
 
 #### Next Steps
-Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can cluster our data into the four edge categories shown while testing the identical edge assumption, and then compute edge densities among each of them for a higher dimensional feature overwhich we are testing hypotheses and classifying covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
+Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can analyze the mean and covariance of the clusters found in our assumption checking, and cluster our data prior to testing hypotheses and classifying over covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
 
 ### Methods
-Tabulated below is the source code for all of the question sets explored below.
-
+Each of the questions required code and (for the inferential, predictive, and assumption checking portions) mathematical theory. This is all explained in detail in each file, tabulated below. Here, we will discuss the methods used in each of these sections, rationalize decision made, and discuss alternatives that could have been performed instead.
 
 | Question Type | Code |
 |---------------|------|
@@ -84,5 +100,7 @@ Tabulated below is the source code for all of the question sets explored below.
 | Inferential | [**``./code/inferential_simulation.ipynb``**](./code/inferential_simulation.ipynb) |
 | Predictive  | [**``./code/classification_simulation.ipynb``**](./code/classification_simulation.ipynb) |
 | Testing Assumptions | [**``./code/test_assumptions.ipynb``**](./code/test_assumptions.ipynb) |
+
+#### Descriptive Analysis
 
 **Prompt**: a report stating and organizing everything you've done so far to learn about and explore your data. this includes all the types of questions, ordered accordingly, plus a separate methods section.  for each analysis, make sure to explain the logical flow from one analysis to the next.  for example, if you ran BIC to estimate the number of clusters and found 4 clusters, this justifies looking at the mean and covariances of each of the clusters.
