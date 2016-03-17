@@ -8,12 +8,12 @@
   - [Predictive Analysis](./progress_report.md#predictive-analysis)
   - [Testing Assumptions](./progress_report.md#testing-assumptions)
   - [Next Steps](./progress_report.md#next-steps)
-- [Methods]()
-  - [Decriptive Analysis]()
-  - [Exploratory Analysis]()
-  - [Inferential Analysis]()
-  - [Predictive Analysis]()
-  - [Testing Assumptions]()
+- [Methods](./progress_report.md#methods)
+  - [Decriptive Analysis](./progress_report.md#descriptive-analysis-1)
+  - [Exploratory Analysis](./progress_report.md#exploratory-analysis-1)
+  - [Inferential Analysis](./progress_report.md#inferential-analysis-1)
+  - [Predictive Analysis](./progress_report.md#predictive-analysis-1)
+  - [Testing Assumptions](./progress_report.md#testing-assumptions-1)
 
 ----------
 
@@ -102,5 +102,13 @@ Each of the questions required code and (for the inferential, predictive, and as
 | Testing Assumptions | [**``./code/test_assumptions.ipynb``**](./code/test_assumptions.ipynb) |
 
 #### Descriptive Analysis
+
+#### Exploratory Analysis
+
+#### Inferential Analysis
+
+#### Predictive Analysis
+
+#### Testing Assumptions
 
 **Prompt**: a report stating and organizing everything you've done so far to learn about and explore your data. this includes all the types of questions, ordered accordingly, plus a separate methods section.  for each analysis, make sure to explain the logical flow from one analysis to the next.  for example, if you ran BIC to estimate the number of clusters and found 4 clusters, this justifies looking at the mean and covariances of each of the clusters.
