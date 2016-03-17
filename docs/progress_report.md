@@ -21,7 +21,7 @@ Knowing now that our graphs are all equal in size (i.e. number of nodes), contai
 <img src="../figs/mean_graph.png" data-canonical-src="../figs/mean_graph.png" width="300" height="300" />
 
 | Query | MRN114 | KKI2009 | SWU4 |
-|-------|--------|-------|------|
+|-------|--------|---------|------|
 |Average Degree | 2862.2| 1396.7 | 2848.1 |
 
 We notice here there is a large difference in the mean degree in these graphs, so in order to understand this further we plotted a histogram of the edge weights for each dataset. This can be seen below.
@@ -33,17 +33,32 @@ We notice from these graphs that most of the edges are very low weights, and lik
 #### Inferential Analysis
 We now seek to understand class conditional differences within our datasets. From here, we will be only looking at the KKI2009 dataset. The covariate we are seeking to separate graphs based upon is sex. Firstly we must pick a feature of our graphs to test this difference under. As we'd looked at this feature in our exploratory analysis, we chose to use edge density as our feature. Running a wilcoxon test on this population, in which 22 subjects were male and 20 subjects were female, we found the following mean probabilities of edge based on class.
 
-| Class | Mean edge count |
-|-------|-----------------|
-| Female| 0.014041836735  |
-| Male  | 0.013130376117  |
+| Class | Mean edge probability |
+|-------|-----------------------|
+| Female| 0.014041836735        |
+| Male  | 0.013130376117        |
 
 We found that the difference between these populations was statistically significant with an alpha value of 0.05, produciing a p value of 0.022768743719. Since we found a statistically significant difference between classes, we can naturally proceed to trying to classify subjects based on their edge density.
 
 #### Predictive Analysis
+Now that a class conditional edge probability difference has been observed, we can attempt to explot this to classify subjects. Several types of classifiers were trained and tested using LOO cross-validation, and their results are tabulated below. Note that chance classification in this dataset is 47% accuracy, since the dataset has more males than females.
+
+| Classifier | Accuracy | Standard Deviation |
+|------------|----------|--------------------|
+|Nearest Neighbors | 0.48 | +/- 1.00 |
+|Linear SVM | 0.55 | +/- 1.00 |
+|Random Forest| 0.57 | +/- 0.99 |
+|Linear Discriminant Analysis| 0.45 | +/- 1.00 |
+|Quadratic Discriminant Analysis| 0.71 | +/- 0.90|
+
+Here we notice that with the only classifier which performs significantly better than chance is the Quadratic Discriminant Analysis. In order to gain some understanding as to why this is the case, we proceed to reevaluate our procedure thus far and test the assumptions we've been making up until this point.
+
+#### Testing Assumptions
 
 
 ### Methods
+Tabulated below is the source code for all of the question sets explored below.
+
 
 | Question Type | Code |
 |---------------|------|
@@ -51,5 +66,6 @@ We found that the difference between these populations was statistically signifi
 | Exploratory | [**``./code/descriptive_and_exploratory_answers.ipynb``**](./code/descriptive_and_exploratory_answers.ipynb) |
 | Inferential | [**``./code/inferential_simulation.ipynb``**](./code/inferential_simulation.ipynb) |
 | Predictive  | [**``./code/classification_simulation.ipynb``**](./code/classification_simulation.ipynb) |
+| Testing Assumptions | [**``./code/test_assumptions.ipynb``**](./code/test_assumptions.ipynb) |
 
 **Prompt**: a report stating and organizing everything you've done so far to learn about and explore your data. this includes all the types of questions, ordered accordingly, plus a separate methods section.  for each analysis, make sure to explain the logical flow from one analysis to the next.  for example, if you ran BIC to estimate the number of clusters and found 4 clusters, this justifies looking at the mean and covariances of each of the clusters.
