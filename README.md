@@ -40,3 +40,7 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 ###Assignment 7
 [**``./draft/summary_presentation.pdf``**](./draft/summary_presentation.pdf)
   > Presentation about findings and methods used throughout the project.
+
+###Assignment 8
+[**``./docs/progress_report.md``**](./docs/progress_report.md)
+  > Report stating all analysis completed to date, as well as logical next steps.
