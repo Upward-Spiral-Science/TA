@@ -1,0 +1,38 @@
+---
+title: "Enhanced Exploratory Analysis"
+author: "Greg Kiar"
+date: "March 26, 2016"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{python}
+import networkx as nx
+import numpy as np
+import matplotlib.pyplot as plt
+import collections
+```
+
+You can also embed plots, for example:
+
+```{python}
+import os
+dnames = list(['../data/MRN114', '../data/KKI2009', '../data/SWU4'])
+print "Datasets: " + ", ".join(dnames)
+print "D = " + str(len(dnames))
+
+# Getting graph names
+fs = dict()
+for dd in dnames:
+        fs[dd] = [root+'/'+fl for root, dir, files in os.walk(dd) for fl in files if fl.endswith(".graphml")]
+# fs[dnames[1]]
+```
+
+```{python}
+print fs
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
