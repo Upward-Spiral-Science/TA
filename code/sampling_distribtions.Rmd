@@ -1,0 +1,84 @@
+---
+title: "sampling_distributions"
+author: "Greg Kiar"
+date: "March 31, 2016"
+output: html_document
+---
+
+Previously, we computed 10 statistics on our true data. We noticed some trends in the graphs, but do not yet know of a relationship (if one exists) between our data and a known graphical distribution, such as Erdos Renyi. Here, we produce graphs of several different distrubutions, and save them to disk, so that we may redo our previous analysis with each of these known models and develop an expectation of which model most closely relates to our data.
+
+The models sampled here are: Erdos Renyi, Barabasi-Albert, Callaway, Forest Fire, Geometric Random, Regular Random, and the Stochastic Block Model.
+
+Shown below is a snippet of how we did this generation for the Erdos Renyi model. The others followed a similar form.
+
+```{r echo=FALSE}
+library(igraph)
+
+path = "~/code/classes/upward-spiral/grelliam/data/simulated/"
+nodes = 70
+samples = 10
+p = 0.4
+```
+
+
+```{r}
+# cat('\nGenerating and saving',samples,'Erdos Renyi Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = erdos.renyi.game(n = nodes, p.or.m = p, type = 'gnp', directed = FALSE, loops = FALSE)
+  write.graph(g, paste(path,"er/er_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+```
+
+
+```{r echo=FALSE}
+
+# cat('\nGenerating and saving',samples,'Barabasi-Albert Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = ba.game(n = nodes, power = 1, directed = FALSE, m=500)
+  write.graph(g, paste(path,"ba/ba_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+
+# cat('\nGenerating and saving',samples,'Callaway Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = callaway.traits.game(nodes = nodes, types = 4, directed = FALSE, edge.per.step = 50, pref.matrix = matrix(data = c(p, p, p, p), nrow = 1, ncol = 4))
+  write.graph(g, paste(path,"callaway/callaway_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+
+# cat('\nGenerating and saving',samples,'Forest Fire Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = forest.fire.game(nodes = nodes, bw.factor = 1, fw.prob = p, directed = FALSE)
+  write.graph(g, paste(path,"ff/ff_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+
+# cat('\nGenerating and saving',samples,'Geometric Random Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = grg.game(nodes = nodes, radius = 3)
+  write.graph(g, paste(path,"geom/geom_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+
+# cat('\nGenerating and saving',samples,'Regular Random Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = k.regular.game(no.of.nodes = nodes, k = 10, directed = FALSE, multiple = FALSE)
+  write.graph(g, paste(path,"reg/reg_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+
+# cat('\nGenerating and saving',samples,'Stochastic Block Model Graphs to disk...')
+for (i in 1:samples){
+  # cat(i,'... ')
+  g = sbm.game(n = nodes, directed = FALSE, loops = FALSE, pref.matrix = matrix(data = c(0.7, 0.1, 0.1, 0.7), ncol = 2, nrow = 2), block.sizes = c(35,35))
+  write.graph(g, paste(path,"sbm/sbm_graph", i, ".graphml", sep = ''), format = 'graphml')
+}
+# cat('done!')
+```
