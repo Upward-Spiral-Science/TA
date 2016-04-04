@@ -45,7 +45,10 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 [**``./docs/progress_report.md``**](./docs/progress_report.md)
   > Report stating all analysis completed to date, as well as logical next steps.
 
-
 ###Assignment 9
 [**``./code/extended_exploratory.ipynb``**](./code/extended_exploratory.ipynb)
   > 10 more questions and plots about my data
+
+###Assignment 10
+[**``./code/multiple_distributions.ipynb``**](./code/multiple_distributions.ipynb)
+  > Testing the same exploratory questions on sampled graphs from different distribution types
