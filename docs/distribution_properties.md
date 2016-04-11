@@ -17,6 +17,7 @@
   - [Scan Statistic-i](./distribution_properties.md#scan-statistic-i-1)
   - [Eigen Value](./distribution_properties.md#eigen-value-1)
   - [Betweenness Centrality](./distribution_properties.md#betweenness-centrality-1)
+- [Comparison](./distribution_properties.md#comparison)
 
 ----------
 
