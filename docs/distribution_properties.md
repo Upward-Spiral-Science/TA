@@ -35,6 +35,7 @@ words
 
 #### Edge Count
 words. left in fig so I had template code
+
 <img src="../figs/graphs_covariance.png" data-canonical-src="../figs/graphs_covariance.png" width="300" />
 <img src="../figs/graphs_identical.png" data-canonical-src="../figs/graphs_identical.png" width="300" />
 
@@ -61,6 +62,7 @@ words
 
 #### Edge Count
 words. left in fig so I had template code
+
 <img src="../figs/graphs_covariance.png" data-canonical-src="../figs/graphs_covariance.png" width="300" />
 <img src="../figs/graphs_identical.png" data-canonical-src="../figs/graphs_identical.png" width="300" />
 
