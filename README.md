@@ -52,3 +52,10 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 ###Assignment 10
 [**``./code/multiple_distributions.ipynb``**](./code/multiple_distributions.ipynb)
   > Testing the same exploratory questions on sampled graphs from different distribution types
+
+###Assignment 10
+[**``./code/extended_exploratory-on-new-datasets.ipynb``**](./code/extended_exploratory-on-new-datasets.ipynb)
+  > Evaluating same set of analyses on different datasets
+
+[**``./docs/distribution_properties.md``**](./docs/distribution_properties.md)
+  > Discuss analyses of each dataset, compare to known distributions
