@@ -2,36 +2,21 @@
 **Table of Contents:**
 - [Overview](./distribution_properties.md#overview)
 - [KKI2009, MRN114, and SWU4 Datasets](./distribution_properties.md#kki2009-mrn114-and-swu4-datasets)
-  - [Decriptive Analysis](./distribution_properties.md#descriptive-analysis)
-  - [Exploratory Analysis](./distribution_properties.md#exploratory-analysis)
-  - [Inferential Analysis](./distribution_properties.md#inferential-analysis)
-  - [Predictive Analysis](./distribution_properties.md#predictive-analysis)
-  - [Testing Assumptions](./distribution_properties.md#testing-assumptions)
-  - [Next Steps](./distribution_properties.md#next-steps)
-- [Methods](./distribution_properties.md#methods)
-  - [Decriptive Analysis](./distribution_properties.md#descriptive-analysis-1)
-  - [Exploratory Analysis](./distribution_properties.md#exploratory-analysis-1)
-  - [Inferential Analysis](./distribution_properties.md#inferential-analysis-1)
-  - [Predictive Analysis](./distribution_properties.md#predictive-analysis-1)
-  - [Testing Assumptions](./distribution_properties.md#testing-assumptions-1)
-
-Number of Non-Zero (NNZ) edge weights
-Vertex Degree
-Edge Count
-Clustering Coefficient
-Scan Statistic-i
-Eigen Value
-Betweenness Centrality
-Simulated Data
-Number of Non-Zero (NNZ) edge weights
-Vertex Degree
-Edge Count
-Clustering Coefficient
-Scan Statistic-i
-Eigen Value
-Betweenness Centrality
-Comparison
-
+  - [Number of Non-Zero (NNZ) edge weights](./distribution_properties.md#number-of-non-zero-nnz-edge-weights)
+  - [Vertex Degree](./distribution_properties.md#vertex-degree)
+  - [Edge Count](./distribution_properties.md#edge-count)
+  - [Clustering Coefficient](./distribution_properties.md#clustering-coefficient)
+  - [Scan Statistic-i](./distribution_properties.md#scan-statistic-i)
+  - [Eigen Value](./distribution_properties.md#eigen-value)
+  - [Betweenness Centrality](./distribution_properties.md#betweenness-centrality)
+- [Simulated Data](./distribution_properties.md#simulated-data)
+  - [Number of Non-Zero (NNZ) edge weights](./distribution_properties.md#number-of-non-zero-nnz-edge-weights-1)
+  - [Vertex Degree](./distribution_properties.md#vertex-degree-1)
+  - [Edge Count](./distribution_properties.md#edge-count-1)
+  - [Clustering Coefficient](./distribution_properties.md#clustering-coefficient-1)
+  - [Scan Statistic-i](./distribution_properties.md#scan-statistic-i-1)
+  - [Eigen Value](./distribution_properties.md#eigen-value-1)
+  - [Betweenness Centrality](./distribution_properties.md#betweenness-centrality-1)
 
 ----------
 
