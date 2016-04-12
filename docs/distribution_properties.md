@@ -25,62 +25,56 @@
 Before performing inference on our data it is necessary to better understand properties of the graphs, possible distributions from which they are sampled, and possible key differences between classes over which we are trying to classify. Here, we have perfomed a follow-up to the [exploratory](./progress_report.md#exploratory-analysis) and [decriptive](./progress_report.md#descriptive-analysis) analyses performed previously, wherein we explore properties of the distributions as well as point estimates, such as edge count, which were estimated previously.
 
 ### KKI2009, MRN114, and SWU4 Datasets
-<img src="../figs/distribs/KKI2009-cc.png" width="280" />
-<img src="../figs/distribs/MRN114-cc.png" width="265" />
-<img src="../figs/distribs/SWU4-cc.png" width="280" />
-
-words
 
 #### Number of Non-Zero (NNZ) edge weights
-words
+<img src="../figs/distribs/KKI2009-nnz.png" height="280" />
+<img src="../figs/distribs/MRN114-nnz.png" height="280" />
+<img src="../figs/distribs/SWU4-nnz.png" height="280" />
 
 #### Vertex Degree
-words
+<img src="../figs/distribs/KKI2009-degree.png" height="280" />
+<img src="../figs/distribs/MRN114-degree.png" height="280" />
+<img src="../figs/distribs/SWU4-degree.png" height="280" />
 
 #### Edge Count
-words. left in fig so I had template code
-
-<img src="../figs/graphs_covariance.png" data-canonical-src="../figs/graphs_covariance.png" width="300" />
-<img src="../figs/graphs_identical.png" data-canonical-src="../figs/graphs_identical.png" width="300" />
+<img src="../figs/distribs/KKI2009-edges.png" height="280" />
+<img src="../figs/distribs/MRN114-edges.png" height="280" />
+<img src="../figs/distribs/SWU4-edges.png" height="280" />
 
 #### Clustering Coefficient
-words
+<img src="../figs/distribs/KKI2009-cc.png" height="280" />
+<img src="../figs/distribs/MRN114-cc.png" height="280" />
+<img src="../figs/distribs/SWU4-cc.png" height="280" />
 
 #### Scan Statistic-i
-words
+<img src="../figs/distribs/KKI2009-ss1.png" height="280" />
+<img src="../figs/distribs/MRN114-ss1.png" height="280" />
+<img src="../figs/distribs/SWU4-ss1.png" height="280" />
 
 #### Eigen Value
-words
+<img src="../figs/distribs/KKI2009-eigen.png" height="280" />
+<img src="../figs/distribs/MRN114-eigen.png" height="280" />
+<img src="../figs/distribs/SWU4-eigen.png" height="280" />
 
 #### Betweenness Centrality
-words
+<img src="../figs/distribs/KKI2009-centrality.png" height="280" />
+<img src="../figs/distribs/MRN114-centrality.png" height="280" />
+<img src="../figs/distribs/SWU4-centrality.png" height="280" />
 
 ### Simulated Data
-words
 
 #### Number of Non-Zero (NNZ) edge weights
-words
 
 #### Vertex Degree
-words
 
 #### Edge Count
-words. left in fig so I had template code
-
-<img src="../figs/graphs_covariance.png" data-canonical-src="../figs/graphs_covariance.png" width="300" />
-<img src="../figs/graphs_identical.png" data-canonical-src="../figs/graphs_identical.png" width="300" />
 
 #### Clustering Coefficient
-words
 
 #### Scan Statistic-i
-words
 
 #### Eigen Value
-words
 
 #### Betweenness Centrality
-words
 
 ### Comparison
-words
