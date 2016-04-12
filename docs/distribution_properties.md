@@ -25,6 +25,10 @@
 Before performing inference on our data it is necessary to better understand properties of the graphs, possible distributions from which they are sampled, and possible key differences between classes over which we are trying to classify. Here, we have perfomed a follow-up to the [exploratory](./progress_report.md#exploratory-analysis) and [decriptive](./progress_report.md#descriptive-analysis) analyses performed previously, wherein we explore properties of the distributions as well as point estimates, such as edge count, which were estimated previously.
 
 ### KKI2009, MRN114, and SWU4 Datasets
+<img src="../figs/distribs/KKI2009-cc.png" width="280" />
+<img src="../figs/distribs/MRN114-cc.png" width="265" />
+<img src="../figs/distribs/SWU4-cc.png" width="280" />
+
 words
 
 #### Number of Non-Zero (NNZ) edge weights
