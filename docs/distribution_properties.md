@@ -41,6 +41,11 @@ Before performing inference on our data it is necessary to better understand pro
 <img src="../figs/distribs/MRN114-edges.png" height="280" />
 <img src="../figs/distribs/SWU4-edges.png" height="280" />
 
+#### Edge Weights
+<img src="../figs/distribs/KKI2009-edgeweight.png" height="280" />
+<img src="../figs/distribs/MRN114-edgeweight.png" height="280" />
+<img src="../figs/distribs/SWU4-edgeweight.png" height="280" />
+
 #### Clustering Coefficient
 <img src="../figs/distribs/KKI2009-cc.png" height="280" />
 <img src="../figs/distribs/MRN114-cc.png" height="280" />
