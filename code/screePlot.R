@@ -2,13 +2,14 @@ library(igraph)
 library(foreach)
 library(ggplot2)
 
-
-path <- '/Users/gkiar/code/classes/upward-spiral/grelliam/data/MRN114//'
+name = 'SWU4 Talairach (1105 node)'
+nodes = 1105
+path <- '/Users/gkiar/code/classes/upward-spiral/grelliam/data/multiscale/SWU4/Talairach/'
 
 format <- paste('\\.', 'graphml', '$', sep='')
 graph_files <- list.files(path=path, pattern=format, recursive=TRUE, full.names=TRUE)
 
-gs <- load_graphs(graph_files, 70)
+gs <- load_graphs(graph_files, nodes)
 A <- gs[[1]]
 len <- gs[[3]]
 
@@ -18,7 +19,7 @@ diags <- foreach(i = 1:len) %do% { SVD[[i]]$d }
 for (i in 1:len) {
   elb =  getElbows(SVD[[i]]$d, n = 3, plot = FALSE)
   if (i == 1) {
-    plot(SVD[[i]]$d, type = 'l', xlab = "Dimension", ylab = "Singular Value", main = "MRN114")
+    plot(SVD[[i]]$d, type = 'l', xlab = "Dimension", ylab = "Singular Value", main = name)
   } else {
     lines(SVD[[i]]$d, type = 'l')
   }
