@@ -59,3 +59,10 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 
 [**``./docs/distribution_properties.md``**](./docs/distribution_properties.md)
   > Discuss analyses of each dataset, compare to known distributions
+
+###Assignment 11
+[**``./docs/classification_plan.md``**](./docs/classification_plan.md)
+  > Development of a plan for classifying brain graphs in a principled manner
+
+[**``./code/scree_plots.md``**](./code/scree_plots.md)
+  > Screen plots for data
