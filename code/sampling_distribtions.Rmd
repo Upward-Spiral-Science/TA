@@ -2,8 +2,25 @@
 title: "sampling_distributions"
 author: "Greg Kiar"
 date: "March 31, 2016"
-output: html_document
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 4
+    fig_retina: 2
+    highlight: pygments
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+    toc_depth: 3
+    mode: standalone
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
 ---
+
 
 Previously, we computed 10 statistics on our true data. We noticed some trends in the graphs, but do not yet know of a relationship (if one exists) between our data and a known graphical distribution, such as Erdos Renyi. Here, we produce graphs of several different distrubutions, and save them to disk, so that we may redo our previous analysis with each of these known models and develop an expectation of which model most closely relates to our data.
 

@@ -1,3 +1,31 @@
+---
+title: "scree plots"
+author: "Greg Kiar"
+date: "April 15, 2016"
+output:
+  html_document:
+    fig_caption: yes
+    fig_height: 4
+    fig_width: 4
+    fig_retina: 2
+    highlight: pygments
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean
+    toc: yes
+    toc_depth: 3
+    mode: standalone
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
 library(igraph)
 library(foreach)
 library(ggplot2)
@@ -18,7 +46,11 @@ diags <- foreach(i = 1:len) %do% { SVD[[i]]$d }
 elbs <- foreach(i = 1:len, .combine="rbind") %do% { getElbows(SVD[[i]]$d, n=3, plot = FALSE)}
 melbs <- ceiling(apply(elbs, 2, mean))
 mdiag <- foreach(i = 1:length(melbs)) %do% { mean(sapply(diags, function(x) { x[melbs[i]] }))}
+```
 
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
 for (i in 1:len) {
   if (i == 1) {
     plot(diags[[i]], type = 'l', xlab = "Dimension", ylab = "Singular Value", main=paste(name, '\n Mean elbows at: ', list(melbs), sep = ''))
@@ -28,3 +60,6 @@ for (i in 1:len) {
   points(elbs[i,],diags[[i]][elbs[i,]],col=2,pch=20)
 }
 points(melbs, mdiag, col=3, pch=15)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
