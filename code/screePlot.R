@@ -2,6 +2,9 @@ library(igraph)
 library(foreach)
 library(ggplot2)
 
+source('/Users/gkiar/code/classes/upward-spiral/grelliam/code/getElbows.R')
+source('/Users/gkiar/code/classes/upward-spiral/grelliam/code/load_graphs.R')
+
 name = 'KKI2009 Desikan (70 node)'
 nodes = 70
 fname = 'kki2009_desikan.pdf'
