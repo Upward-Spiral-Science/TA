@@ -4,7 +4,9 @@ library(ggplot2)
 
 name = 'KKI2009 Desikan (70 node)'
 nodes = 70
+fname = 'kki2009_desikan.pdf'
 path <- '/Users/gkiar/code/classes/upward-spiral/grelliam/data/KKI2009/'
+pdf(fname)
 
 format <- paste('\\.', 'graphml', '$', sep='')
 graph_files <- list.files(path=path, pattern=format, recursive=TRUE, full.names=TRUE)
@@ -28,3 +30,5 @@ for (i in 1:len) {
   points(elbs[i,],diags[[i]][elbs[i,]],col=2,pch=20)
 }
 points(melbs, mdiag, col=3, pch=15)
+
+dev.off()
