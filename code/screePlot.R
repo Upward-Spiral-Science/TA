@@ -25,12 +25,13 @@ melbs <- ceiling(apply(elbs, 2, mean))
 mdiag <- foreach(i = 1:length(melbs)) %do% { mean(sapply(diags, function(x) { x[melbs[i]] }))}
 
 for (i in 1:len) {
+  temp = cumsum(diags[[i]])/sum(diags[[i]])
   if (i == 1) {
-    plot(diags[[i]], type = 'l', xlab = "Dimension", ylab = "Singular Value", main=paste(name, '\n Mean elbows at: ', list(melbs), sep = ''))
+    plot(temp, type = 'l', xlab = "Dimension", ylab = "Proportion of Total Variance", main=paste(name, '\n Mean elbows at: ', list(melbs), sep = ''))
   } else {
-    lines(diags[[i]], type = 'l')
+    lines(temp, type = 'l')
   }
-  points(elbs[i,],diags[[i]][elbs[i,]],col=2,pch=20)
+  points(elbs[i,],temp[elbs[i,]],col=2,pch=20)
 }
 points(melbs, mdiag, col=3, pch=15)
 
