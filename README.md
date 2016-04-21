@@ -65,4 +65,7 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
   > Development of a plan for classifying brain graphs in a principled manner
 
 [**``./code/scree_plots.md``**](./code/scree_plots.md)
-  > Screen plots for data
+  > Scree plot generating code for data
+
+[**``./figs/scree/``**](./figs/scree/)
+  > Scree plots for data
