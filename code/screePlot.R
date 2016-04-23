@@ -9,7 +9,7 @@ name = 'KKI2009 Desikan (70 node)'
 nodes = 70
 fname = 'kki2009_desikan.pdf'
 path <- '/Users/gkiar/code/classes/upward-spiral/grelliam/data/KKI2009/'
-pdf(fname)
+# pdf(fname)
 
 format <- paste('\\.', 'graphml', '$', sep='')
 graph_files <- list.files(path=path, pattern=format, recursive=TRUE, full.names=TRUE)
@@ -24,6 +24,7 @@ elbs <- foreach(i = 1:len, .combine="rbind") %do% { getElbows(SVD[[i]]$d, n=3, p
 melbs <- ceiling(apply(elbs, 2, mean))
 mdiag <- foreach(i = 1:length(melbs)) %do% { mean(sapply(diags, function(x) { x[melbs[i]] }))}
 
+par(mfrow=c(2,2))
 for (i in 1:len) {
   temp = cumsum(diags[[i]])/sum(diags[[i]])
   if (i == 1) {
@@ -35,4 +36,4 @@ for (i in 1:len) {
 }
 points(melbs, mdiag, col=3, pch=15)
 
-dev.off()
+# dev.off()
