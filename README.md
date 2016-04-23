@@ -69,3 +69,11 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 
 [**``./figs/scree/``**](./figs/scree/)
   > Scree plots for data
+
+###Assignment 12
+[**``./code/multipanel_scree_plots.md``**](./code/multipanel_scree_plots.md)
+  > Multipanel scree plots and code for 8 datasets on the Desikan atlas.
+
+[**``./figs/multipanel_scree_plots/``**](./figs/multipanel_scree_plots/)
+  > Multipanel scree plots for 8 datasets on the Desikan, CPAC200, and Talairach atlases.
+
