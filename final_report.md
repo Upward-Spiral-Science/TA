@@ -5,20 +5,20 @@ May 1, 2016
 -------
 
 **Table of Contents:**
-- [Overview](./progress_report.md#overview)
-- [Scientific Questioning](./progress_report.md#scientific-questioning)
-  - [Decriptive Analysis](./progress_report.md#descriptive-analysis)
-  - [Exploratory Analysis](./progress_report.md#exploratory-analysis)
-  - [Inferential Analysis](./progress_report.md#inferential-analysis)
-  - [Predictive Analysis](./progress_report.md#predictive-analysis)
-  - [Testing Assumptions](./progress_report.md#testing-assumptions)
-  - [Next Steps](./progress_report.md#next-steps)
-- [Methods](./progress_report.md#methods)
-  - [Decriptive Analysis](./progress_report.md#descriptive-analysis-1)
-  - [Exploratory Analysis](./progress_report.md#exploratory-analysis-1)
-  - [Inferential Analysis](./progress_report.md#inferential-analysis-1)
-  - [Predictive Analysis](./progress_report.md#predictive-analysis-1)
-  - [Testing Assumptions](./progress_report.md#testing-assumptions-1)
+- [Overview](./final_report.md#overview)
+- [Scientific Questioning](./final_report.md#scientific-questioning)
+  - [Decriptive Analysis](./final_report.md#descriptive-analysis)
+  - [Exploratory Analysis](./final_report.md#exploratory-analysis)
+  - [Inferential Analysis](./final_report.md#inferential-analysis)
+  - [Predictive Analysis](./final_report.md#predictive-analysis)
+  - [Testing Assumptions](./final_report.md#testing-assumptions)
+  - [Next Steps](./final_report.md#next-steps)
+- [Methods](./final_report.md#methods)
+  - [Decriptive Analysis](./final_report.md#descriptive-analysis-1)
+  - [Exploratory Analysis](./final_report.md#exploratory-analysis-1)
+  - [Inferential Analysis](./final_report.md#inferential-analysis-1)
+  - [Predictive Analysis](./final_report.md#predictive-analysis-1)
+  - [Testing Assumptions](./final_report.md#testing-assumptions-1)
 
 ----------
 
