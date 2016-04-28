@@ -12,13 +12,18 @@ May 1, 2016
   - [Inferential Analysis](./final_report.md#inferential-analysis)
   - [Predictive Analysis](./final_report.md#predictive-analysis)
   - [Testing Assumptions](./final_report.md#testing-assumptions)
-  - [Next Steps](./final_report.md#next-steps)
+  - [Extended Exploratory Analysis](./final_report.md#extended-exploratory-analysis)
+  - [Sample Distributions](./final_report.md#sample-distributions)
+  - [Dimensionality Reduction](./final_report.md#dimensionality-reduction)
 - [Methods](./final_report.md#methods)
   - [Decriptive Analysis](./final_report.md#descriptive-analysis-1)
   - [Exploratory Analysis](./final_report.md#exploratory-analysis-1)
   - [Inferential Analysis](./final_report.md#inferential-analysis-1)
   - [Predictive Analysis](./final_report.md#predictive-analysis-1)
   - [Testing Assumptions](./final_report.md#testing-assumptions-1)
+  - [Extended Exploratory Analysis](./final_report.md#extended-exploratory-analysis-1)
+  - [Sample Distributions](./final_report.md#sample-distributions-1)
+  - [Dimensionality Reduction](./final_report.md#dimensionality-reduction-1)
 
 ----------
 
@@ -95,6 +100,15 @@ Finally, we test whether or not the assumption made implicitly in QDA, that our 
 #### Next Steps
 Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can analyze the mean and covariance of the clusters found in our assumption checking, and cluster our data prior to testing hypotheses and classifying over covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
 
+#### Extended Exploratory Analysis
+words
+
+#### Sample Distributions
+words
+
+#### Dimensionality Reduction
+words
+
 ### Methods
 Each of the questions required code and (for the inferential, predictive, and assumption checking portions) mathematical theory. This is all explained in detail in each file, tabulated below. Here, we will discuss the methods used in each of these sections, rationalize decision made, and discuss alternatives that could have been performed instead.
 
@@ -134,3 +148,12 @@ When performing any analysis that requires assumptions, it is wise to test the a
 For testing whether or not samples were identically distributed, we attempted to cluster the data using a Gaussian Mixture Model while varying the number of clusters. We ran Bayesian Information Criterion (BIC) on all of the clusterings and plotted the curve of BIC values over varying dimension. Where BIC is maximized, we have found the optimal number of clusters for this data (using this clustering method). Therefore, if the ideal number of clusters is 1, we can feel confident that our data may be identically distributed. However, when the optimal BIC is at a higher number, or monotonically increasing, it suggests that our data are not identically distributed.
 
 The final test, which asserts a class conditional covariance, was perhaps the most obvious to test. We computed the covariance of all the data in each class, and then took the difference of the two class covariance matrices. We found that the covariance matrices were very different, which lead us to believe that this assumption was in fact correct.
+
+#### Extended Exploratory Analysis
+words
+
+#### Sample Distributions
+words
+
+#### Dimensionality Reduction
+words
