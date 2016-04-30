@@ -45,7 +45,7 @@ The natural first step when working with any data is to ask exploratory and desc
 #### Exploratory Analysis
 Knowing now that our graphs are all equal in size (i.e. number of nodes), contain no obviously invalid data, but vary greatly in number of subjects, we seek to understand some more features specific to each dataset. The first exploratory question we asked was seeking to determine the average edge degree for each dataset. These results are tabulated below. We also compute the mean brain graph and visualize it, below.
 
-<img src="./figs/mean_graph.png" data-canonical-src="./figs/mean_graph.png" width="300" height="300" />
+<img src="./figs/mean_connectome.png" data-canonical-src="./figs/mean_connectome.png" width="300" height="300" />
 
 | Query | MRN114 | KKI2009 | SWU4 |
 |-------|--------|---------|------|
@@ -53,7 +53,9 @@ Knowing now that our graphs are all equal in size (i.e. number of nodes), contai
 
 We notice here there is a large difference in the mean degree in these graphs, so in order to understand this further we plotted a histogram of the edge weights for each dataset. This can be seen below.
 
-<img src="./figs/histograms.png" data-canonical-src="./figs/histograms.png" width="300" />
+<img src="./figs/KKI2009_ew_initial.png" data-canonical-src="./figs/KKI2009_ew_initial.png" width="250" />
+<img src="./figs/SWU4_ew_initial.png" data-canonical-src="./figs/SWU4_ew_initial.png" width="250" />
+<img src="./figs/MRN114_ew_initial.png" data-canonical-src="./figs/MRN114_ew_initial.png" width="250" />
 
 We notice from these graphs that most of the edges are very low weights, and likely due to some type of noise. Taking the log of our graphs may make these graphs more robust to outliers in our further analysis.
 
