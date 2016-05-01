@@ -97,7 +97,7 @@ Next, we investigate the same properties about our edges. Shown below are the sa
 
 Finally, we test whether or not the assumption made implicitly in QDA, that our classes have different covariance matrices, is true. Shown below is a plot of each of the class covariance matrices, as well as a plot of the absolute difference of this matrix. We can see a significant difference in this matrix, which suggests why QDA outperformed the other methods (certainly LDA, which explicitly assumes classes have an identical covariance matrix).
 
-<img src="./figs/class_covariance.png" data-canonical-src="./figs/class_covariance.png" width="300" />
+<img src="./figs/class_covariance.png" data-canonical-src="./figs/class_covariance.png" width="500" />
 
 #### Next Steps
 Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can analyze the mean and covariance of the clusters found in our assumption checking, and cluster our data prior to testing hypotheses and classifying over covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
