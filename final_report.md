@@ -13,7 +13,6 @@ May 1, 2016
   - [Predictive Analysis](./final_report.md#predictive-analysis)
   - [Testing Assumptions](./final_report.md#testing-assumptions)
   - [Extended Exploratory Analysis](./final_report.md#extended-exploratory-analysis)
-  - [Sample Distributions](./final_report.md#sample-distributions)
   - [Dimensionality Reduction](./final_report.md#dimensionality-reduction)
 - [Methods](./final_report.md#methods)
   - [Decriptive Analysis](./final_report.md#descriptive-analysis-1)
@@ -22,7 +21,6 @@ May 1, 2016
   - [Predictive Analysis](./final_report.md#predictive-analysis-1)
   - [Testing Assumptions](./final_report.md#testing-assumptions-1)
   - [Extended Exploratory Analysis](./final_report.md#extended-exploratory-analysis-1)
-  - [Sample Distributions](./final_report.md#sample-distributions-1)
   - [Dimensionality Reduction](./final_report.md#dimensionality-reduction-1)
 
 ----------
@@ -103,13 +101,61 @@ Finally, we test whether or not the assumption made implicitly in QDA, that our 
 Thus far we have learned a fair amount about the edge densities and properties of our data. Moving forward, we can analyze the mean and covariance of the clusters found in our assumption checking, and cluster our data prior to testing hypotheses and classifying over covariates. We can also expand to regressing subject age, with several methods. Finally, once we are confident in and satisfied with a method testing on this dataset, we can expand towards testing the method on the MRN114 and SWU4 datasets, as well.
 
 #### Extended Exploratory Analysis
-words
+Here we explored the data in much more detail than we had previously. We investigated properties such as: clusering coefficient, betweeneness centrality, vertex degree, number of non zero edges, eigen values, edge weights, number of 3-cliques, and scan statistics. These analyses were performed on the KKI2009, SWU4, and MRN114 datasets.
 
-#### Sample Distributions
-words
+The clustering coefficient for the datasets is as is shown below. It can be seen that the KKI2009 dataset is quite consistent across subjects, while the other two datasets appear bimodal, and very closely resemble each other in terms of the portion of subjects belong to each mode.
+
+<img src="./figs/distribs/KKI2009-cc.png" width="280" />
+<img src="./figs/distribs/MRN114-cc.png" width="280" />
+<img src="./figs/distribs/SWU4-cc.png" width="280" />
+
+The betweenness centrality is a metric which assesses the centrality of each node by counting the portion of shortest paths between all other nodes in the graphs it lies on.
+
+<img src="./figs/distribs/KKI2009-centrality.png" width="280" />
+<img src="./figs/distribs/MRN114-centrality.png" width="280" />
+<img src="./figs/distribs/SWU4-centrality.png" width="280" />
+
+The degree sequence shows the distribution of degrees of nodes within the graphs. The MRN114 and SWU4 datasets appear more connected than the KKI2009 dataset, as the median is shifted to the right for these datasets.
+
+<img src="./figs/distribs/KKI2009-degree.png" width="280" />
+<img src="./figs/distribs/MRN114-degree.png" width="280" />
+<img src="./figs/distribs/SWU4-degree.png" width="280" />
+
+The number of non zeros in a graph counts the unweighted edges. In these graphs, there are 70 nodes, so the maximum number of edges is 2415.
+
+<img src="./figs/distribs/KKI2009-nnz.png" width="280" />
+<img src="./figs/distribs/MRN114-nnz.png" width="280" />
+<img src="./figs/distribs/SWU4-nnz.png" width="280" />
+
+As these are weighted graphs, the distribution of edge weights is also of interest. We see most edges are very small weights, which suggests most connections observed in the graph are not "strong" from a robust standpoint (i.e. only few fibers connect the regions, rather than many).
+
+<img src="./figs/distribs/KKI2009-edgeweight.png" width="280" />
+<img src="./figs/distribs/MRN114-edgeweight.png" width="280" />
+<img src="./figs/distribs/SWU4-edgeweight.png" width="280" />
+
+The scan statistic-1 counts the number of edges within a local neighbourhood.
+
+<img src="./figs/distribs/KKI2009-ss1.png" width="280" />
+<img src="./figs/distribs/MRN114-ss1.png" width="280" />
+<img src="./figs/distribs/SWU4-ss1.png" width="280" />
+
+The eigen values of the system were the last feature we looked at of the graphs, and are seen below.
+
+<img src="./figs/distribs/KKI2009-eigen.png" width="280" />
+<img src="./figs/distribs/MRN114-eigen.png" width="280" />
+<img src="./figs/distribs/SWU4-eigen.png" width="280" />
+
+
 
 #### Dimensionality Reduction
-words
+
+When analyzing high dimensional data with few samples, it is often very benficial to reduce the dimensions of the data. It is valuable to create scree-plots of the data to see how many dimensions your data can be effectively represented in. Here we showed scree plots across more datasets and three different scales of graphs (i.e. different numbers of nodes). It is interesting to note that across datasets the mean elbows are very consistent within a scale.
+
+<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
+
+<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
+
+<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
 
 ### Methods
 Each of the questions required code and (for the inferential, predictive, and assumption checking portions) mathematical theory. This is all explained in detail in each file, tabulated below. Here, we will discuss the methods used in each of these sections, rationalize decision made, and discuss alternatives that could have been performed instead.
@@ -141,7 +187,7 @@ Here we needed to define a model and test statistic for our hypothesis test. We 
 <img src="./figs/wilcoxon_classification.png" data-canonical-src="./figs/wilcoxon_classification.png" width="450" />
 
 #### Predictive Analysis
-Similarly to the inferential analysis, we needed to here specify a model and loss function for our classification task. The model again used edge probability as the feature. Here the loss function was simply the indicator function over assigned label by the classifer compared to true label - if the labels were the same, there was no loss; otherwise, the loss was 1. Here we tested 5 different classifiers on the data and compared their performance. Some of the tests were parametric (LDA, QDA), while others were non-parametric (K-nearest neighbour, Linear SVM, and Random Forest). The parameters chosen for each of these algorithms was not at all tuned to our data, but were the default parameters suggested by the sklearn website, where the implementations were found. Improving this, and choosing parameters that match our assumptions or expectations about our data could drastically improve the performance of these classifiers.
+Similarly to the inferential analysis, we needed to here specify a model and loss function for our classification task. The model again used edge probability as the feature. Here the loss function was simply the indicator function over assigned label by the classifer compared to true label - if the labels were the same, there was no loss; otherwise, the loss was 1. Here we tested 5 different classifiers on the data and compared their performance. Some of the tests were non-parametric (LDA, QDA), while others were parametric (K-nearest neighbour, Linear SVM, and Random Forest). The parameters chosen for each of these algorithms was not at all tuned to our data, but were the default parameters suggested by the sklearn website, where the implementations were found. Improving this, and choosing parameters that match our assumptions or expectations about our data could drastically improve the performance of these classifiers.
 
 Shown below is a figure illustrating the performance of each of these classifiers tested on simulated data that is sampled from a distribution similar to our observed data.
 
