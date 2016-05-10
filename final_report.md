@@ -153,9 +153,9 @@ When analyzing high dimensional data with few samples, it is often very benficia
 
 <img src="./figs/multipanel_scree_plots/desikan.png" width="900" />
 
-<img src="./figs/multipanel_scree_plots/desikan.png" width="900" />
+<img src="./figs/multipanel_scree_plots/cpac200.png" width="900" />
 
-<img src="./figs/multipanel_scree_plots/desikan.png" width="900" />
+<img src="./figs/multipanel_scree_plots/talairach.png" width="900" />
 
 ### Methods
 Each of the questions required code and (for the inferential, predictive, and assumption checking portions) mathematical theory. This is all explained in detail in each file, tabulated below. Here, we will discuss the methods used in each of these sections, rationalize decision made, and discuss alternatives that could have been performed instead.
