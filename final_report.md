@@ -123,9 +123,9 @@ The degree sequence shows the distribution of degrees of nodes within the graphs
 
 The number of non zeros in a graph counts the unweighted edges. In these graphs, there are 70 nodes, so the maximum number of edges is 2415.
 
-<img src="./figs/distribs/KKI2009-nnz.png" width="280" />
-<img src="./figs/distribs/MRN114-nnz.png" width="280" />
-<img src="./figs/distribs/SWU4-nnz.png" width="280" />
+<img src="./figs/distribs/KKI2009-nnz.png" width="580" />
+<img src="./figs/distribs/MRN114-nnz.png" width="580" />
+<img src="./figs/distribs/SWU4-nnz.png" width="580" />
 
 As these are weighted graphs, the distribution of edge weights is also of interest. We see most edges are very small weights, which suggests most connections observed in the graph are not "strong" from a robust standpoint (i.e. only few fibers connect the regions, rather than many).
 
@@ -151,11 +151,11 @@ The eigen values of the system were the last feature we looked at of the graphs,
 
 When analyzing high dimensional data with few samples, it is often very benficial to reduce the dimensions of the data. It is valuable to create scree-plots of the data to see how many dimensions your data can be effectively represented in. Here we showed scree plots across more datasets and three different scales of graphs (i.e. different numbers of nodes). It is interesting to note that across datasets the mean elbows are very consistent within a scale.
 
-<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
+<img src="./figs/multipanel_scree_plots/desikan.png" width="900" />
 
-<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
+<img src="./figs/multipanel_scree_plots/cpac200.png" width="900" />
 
-<img src="./figs/multipanel_scree_plots/desikan.png" width="800" />
+<img src="./figs/multipanel_scree_plots/talairach.png" width="900" />
 
 ### Methods
 Each of the questions required code and (for the inferential, predictive, and assumption checking portions) mathematical theory. This is all explained in detail in each file, tabulated below. Here, we will discuss the methods used in each of these sections, rationalize decision made, and discuss alternatives that could have been performed instead.
@@ -201,10 +201,7 @@ For testing whether or not samples were identically distributed, we attempted to
 The final test, which asserts a class conditional covariance, was perhaps the most obvious to test. We computed the covariance of all the data in each class, and then took the difference of the two class covariance matrices. We found that the covariance matrices were very different, which lead us to believe that this assumption was in fact correct.
 
 #### Extended Exploratory Analysis
-words
-
-#### Sample Distributions
-words
+The library Networkx contains lots of pre-built functions for computing invariants on graphs. Those computed here were all packaged as a part of Networkx, so custom scripts were only written to wrap the management of this processing across graphs and datasets.
 
 #### Dimensionality Reduction
-words
+Scree plots show the singular values of the Singular Value Decomposition of a matrix. We took the adjacency matrix of our graphs, and performed the SVD on them. The elbows were found using code provided by Youngser Park, an implementation of the Zhu Ghodsi method published in 2006.
