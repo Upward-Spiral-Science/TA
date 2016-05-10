@@ -85,12 +85,12 @@ Up to this point, our analysis had made two large assumptions about our data: th
 
 First, we test whether the graphs are sampled independently from each other and identically. Plotted below is the covariance matrix of our graphs. Significant content in the off-diagonal suggests that these graphs are in fact dependent. Below that, is a figure which plots the BIC score when doing GMM clustering on the graphs. We see that the optimal number of clusters is greater than 1, suggesting they are not identically distributed, either.
 
-<img src="./figs/graphs_covariance.png" data-canonical-src="./figs/graphs_covariance.png" width="400" />
+<img src="./figs/graphs_covariance.png" data-canonical-src="./figs/graphs_covariance.png" width="400" /> <br/>
 <img src="./figs/graphs_identical.png" data-canonical-src="./figs/graphs_identical.png" width="400" />
 
 Next, we investigate the same properties about our edges. Shown below are the same two figures for edges rather than graphs. We again notice lots of content in the off-diagonal of our covariance matrix, suggesting dependence between edges. Notice in the identical test, however, that a clear "optimal" number of clusters does exist whereas previously the plot seemed monotonically increasing. Here we notice an optimal clustering of 4, which can later be leveraged when doing clustering or classification.
 
-<img src="./figs/edges_covariance.png" data-canonical-src="./figs/edges_covariance.png" width="400" />
+<img src="./figs/edges_covariance.png" data-canonical-src="./figs/edges_covariance.png" width="400" /> <br/>
 <img src="./figs/edges_identical.png" data-canonical-src="./figs/edges_identical.png" width="400" />
 
 Finally, we test whether or not the assumption made implicitly in QDA, that our classes have different covariance matrices, is true. Shown below is a plot of each of the class covariance matrices, as well as a plot of the absolute difference of this matrix. We can see a significant difference in this matrix, which suggests why QDA outperformed the other methods (certainly LDA, which explicitly assumes classes have an identical covariance matrix).
