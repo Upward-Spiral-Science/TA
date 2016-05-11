@@ -25,10 +25,10 @@ scree_with_elbows <- function(name, nodes, path, idx=NaN) {
     if (i == 1) {
       if (is.nan(idx)) {
         plot(temp, type = 'l', xlab = "", ylab = "",
-             main = paste(name, '\n Mean elbows at: ', list(melbs), sep = ''))
+             main = paste(name, '\n Mean elbows at: ', list(melbs), sep = ''), cex.lab=2, cex.axis=2, cex.main=2, cex.sub=2)
       } else {
         plot(temp, type = 'l', xlab = "Dimension", ylab = "Portion of Total Variance",
-             main = paste(name, '\n Mean elbows at: ', list(melbs), sep = ''))
+             main = paste(name, '\n Mean elbows at: ', list(melbs), sep = ''), cex.lab=1.8, cex.axis=2, cex.main=2, cex.sub=1.8)
       }
     } else {
       lines(temp, type = 'l')

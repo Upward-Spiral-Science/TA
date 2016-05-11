@@ -14,7 +14,7 @@ name = c('KKI2009',
          'BNU3',
          'NKI1',
          'NKIENH')
-nodes = 200
+nodes = 70
 path <- c('/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/KKI2009',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/MRN114',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/MRN1313',
@@ -23,10 +23,12 @@ path <- c('/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/KKI2009
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/BNU3',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/NKI1',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/NKIENH')
-plotf = '/Users/gkiar/code/classes/upward-spiral/grelliam/figs/multipanel_scree_plots/test.png'
+plotf = '/Users/gkiar/code/classes/upward-spiral/grelliam/figs/multipanel_scree_plots/cpac200.png'
 
-png(plotf, width=960, height=384, units="px")
-par(mfrow=c(2,4))
+png(plotf, width=1200, height=600, units="px")
+mar.default <- c(5,4,4,2) + 0.1
+par(mar = mar.default + c(0, 4, 0, 0), mfrow=c(2,4))
+
 botleft = 5
 for (i in 1:length(name)){
   if (i == botleft) {
