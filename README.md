@@ -53,14 +53,14 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 [**``./code/multiple_distributions.ipynb``**](./code/multiple_distributions.ipynb)
   > Testing the same exploratory questions on sampled graphs from different distribution types
 
-###Assignment 10
+###Assignment 11
 [**``./code/extended_exploratory-on-new-datasets.ipynb``**](./code/extended_exploratory-on-new-datasets.ipynb)
   > Evaluating same set of analyses on different datasets
 
 [**``./docs/distribution_properties.md``**](./docs/distribution_properties.md)
   > Discuss analyses of each dataset, compare to known distributions
 
-###Assignment 11
+###Assignment 12
 [**``./docs/classification_plan.md``**](./docs/classification_plan.md)
   > Development of a plan for classifying brain graphs in a principled manner
 
@@ -70,13 +70,13 @@ Office Hours: Tuesdays 2pm-3pm, Clark 317
 [**``./figs/scree/``**](./figs/scree/)
   > Scree plots for data
 
-###Assignment 12
+###Assignment 13
 [**``./code/multipanel_scree_plots.md``**](./code/multipanel_scree_plots.md)
   > Multipanel scree plots and code for 8 datasets on the Desikan atlas.
 
 [**``./figs/multipanel_scree_plots/``**](./figs/multipanel_scree_plots/)
   > Multipanel scree plots for 8 datasets on the Desikan, CPAC200, and Talairach atlases.
 
-###Assignment 13
+###Assignment 14
 [**``./final_report.md``**](./final_report.md)
   > Final report summarizing work performed throughout the course
