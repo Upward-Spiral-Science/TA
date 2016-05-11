@@ -14,7 +14,7 @@ name = c('KKI2009',
          'BNU3',
          'NKI1',
          'NKIENH')
-nodes = 70
+nodes = 200
 path <- c('/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/KKI2009',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/MRN114',
           '/Users/gkiar/code/classes/upward-spiral/grelliam/data/cpac200/MRN1313',
